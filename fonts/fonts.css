@@ -1,1 +1,25 @@
-/* No CSS *//*# sourceMappingURL=fonts.css.map */
+@font-face {
+  font-family: 'Montserrat';
+  src: url(./Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Montserrat Bold';
+  src: url(./Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Montserrat Italic';
+  src: url(./Montserrat-Italic.ttf);
+}
+
+@font-face {
+  font-family: 'Montserrat Italic Bold';
+  src: url(./Montserrat-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(./Roboto-Regular.ttf);
+}
+/*# sourceMappingURL=fonts.css.map */
