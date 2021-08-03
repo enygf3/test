@@ -82,6 +82,7 @@ let quizQ2 = document.querySelector('.quiz-q2')
 let quizQ3 = document.querySelector('.quiz-q3')
 let quizQ4 = document.querySelector('.quiz-q4')
 let quizQ5 = document.querySelector('.quiz-q5')
+let quizQ6 = document.querySelector('.quiz-q6')
 
 let returnToQ1 = document.querySelector('.q2-return-btn')
 let returnToQ2 = document.querySelector('.q3-return-btn')
@@ -107,15 +108,15 @@ function paging(nextQuiz, currentAns, currentQuiz, retrn) {
                 }
             })
         }   
-    } else {
-        toQ6Btn.addEventListener('click', () => {
-            hideEl(currentQuiz)
-            setTimeout(removeEl, 500, currentQuiz)
-            displayEl(nextQuiz)
-            setTimeout(showEl, 300, nextQuiz)
-        })
     }
 }
+
+toQ6Btn.addEventListener('click', () => {
+            hideEl(quizQ5)
+            setTimeout(removeEl, 500, quizQ5)
+            displayEl(quizQ6)
+            setTimeout(showEl, 300, quizQ6)
+        })
 
 paging(quizQ2, answersQ1, quizQ1, returnToQ1);
 paging(quizQ3, answersQ2, quizQ2, returnToQ2);
