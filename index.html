@@ -13,13 +13,102 @@
 
         <div class="wrapper">
             <div class="main-block block">
+
                <h3 class="main-block__title">распродажа<br>кредитов 2021!</h3>
+
                <div class="main-block__container">
                    <h3 class="container__info">Этим летом банки понизили ставки на некоторые кредиты и упростили получение</h3>
                </div>
+
                <div class="main-block__details">
                    <h3><span><img src="./ico/main-arrow.svg"></span>подробнее</h3>
                </div>
+
+               <div class="start-quiz">
+                   <div class="start-quiz__container">
+                    <h3>Заполни форму и найди кредит, который тебе выдадутс минимальной ставкой</h3>
+                    <button class="start-quiz-btn">начать<img src="./ico/quiz-start-arr.png"></button>  
+                       <img src="./img/quiz-border.png">                
+                     </div>
+               </div>
+
+               <div class="quiz-q1 quiz">
+                   <div class="quiz-q1-container">
+                       <h3 class="question q1">Поехали, вопрос 1 из 6</h3>
+                       <h3 class="q1-location general">Откуда вы?</h3>
+                       <div class="q1-answers">
+                           <button class="q1-answer" id='q1-a1'>Минск</button>
+                           <button class="q1-answer" id="q1-a2">Минская обл</button>
+                           <button class="q1-answer" id="q1-a3">Брест<br>и обл</button>
+                           <button class="q1-answer" id="q1-a4">Витебск<br>и обл</button>
+                           <button class="q1-answer" id="q1-a5">Гомель<br>и обл</button>
+                           <button class="q1-answer" id="q1-a6">Гродно<br>и обл</button>
+                           <button class="q1-answer" id="q1-a7">Могилев<br>и обл</button>
+                       </div>
+                   </div>
+               </div>
+
+               <div class="quiz-q2 quiz">
+                <div class="quiz-q2-container">
+                    <h3 class="question q2">Поехали, вопрос 2 из 6</h3>
+                    <h3 class="q2-job general">Как у вас с работой?</h3>
+                    <div class="q2-answers answers">
+                        <button class="q2-answer answer" id='q2-a1'>Официально работаю</button>
+                        <button class="q2-answer answer" id="q2-a2">Работаю неофициально</button>
+                        <button class="q2-answer answer" id="q2-a3">Не работаю/в декрете/<br>пенсионер/студент</button>
+                    </div>
+                    <button class="q2-return-btn return"><img src="./ico/quiz-return-btn.png">Назад</button>
+                </div>
+            </div>
+
+            <div class="quiz-q3 quiz">
+                <div class="quiz-q3-container">
+                    <h3 class="question q3">Поехали, вопрос 3 из 6</h3>
+                    <h3 class="q3-money general">Сколько денег хотите?</h3>
+                    <div class="q3-answers answers">
+                        <button class="q3-answer answer" id='q3-a1'>до 2 000 рублей</button>
+                        <button class="q3-answer answer" id="q3-a2">от 2 000 до 10 000 рублей</button>
+                        <button class="q3-answer answer" id="q3-a3">больше 10 000 рублей</button>
+                    </div>
+                    <button class="q3-return-btn return"><img src="./ico/quiz-return-btn.png">Назад</button>
+                </div>
+            </div>
+
+            <div class="quiz-q4 quiz">
+                <div class="quiz-q4-container">
+                    <h3 class="question q4">Поехали, вопрос 4 из 6</h3>
+                    <h3 class="q4-bills general">Есть ли просрочки по кредитам?</h3>
+                    <div class="q4-answers answers">
+                        <button class="q4-answer answer" id='q4-a1'>Да, сейчас есть</button>
+                        <button class="q4-answer answer" id="q4-a2">Были, погасил</button>
+                        <button class="q4-answer answer" id="q4-a3">Просрочек нет</button>
+                    </div>
+                    <button class="q4-return-btn return"><img src="./ico/quiz-return-btn.png">Назад</button>
+                </div>
+            </div>
+
+            <div class="quiz-q5 quiz">
+                <div class="quiz-q5-container">
+                    <h3 class="question q5">Поехали, вопрос 5 из 6</h3>
+                    <h3 class="q5-bills general">Как вам рассказать о вариантах?</h3>
+                    <div class="q5-answers answers">
+                        <div class="q5-answer" id='q5-a1'>
+                            <span>Ваше имя</span><input type="text" placeholder="Ваше имя">
+                        </div>
+                        <div class="q5-answer" id="q5-a2">
+                            <span>Где лучше<br>связаться?</span>
+                            <select>
+                                <option>По телефону</option>
+                            </select>
+                        </div>
+                        <div class="q5-answer" id="q5-a3">
+                            <span>Ваш номер</span><input type="tel" value="+375">
+                        </div>
+                    </div>
+                    <button class="q5-next-btn btn">Далее<img src="./ico/quiz-end.png"></button>
+                </div>
+            </div>
+               
                <div class="cookies">
                 <h3>Этот веб-сайт использует cookies</h3>
                 <button class="cookies__hide">OK</button>
