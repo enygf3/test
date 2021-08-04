@@ -711,7 +711,7 @@ html, body {
   }
 }
 
-@media all and (max-width: 375px) {
+@media all and (max-width: 767px) {
   .main-block__title {
     font-size: 37px;
     line-height: 36px;
