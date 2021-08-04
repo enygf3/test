@@ -5,6 +5,7 @@
     padding: 0 auto
     user-select: none
     outline: none
+    overflow: hidden
 
 html, body
     height: 100%
@@ -309,6 +310,7 @@ html, body
         position: absolute
         top: 50%
         transform: translate(0%, -50%)
+        width: 100px
     input
         background: #FAFAFA
         box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15)
@@ -529,3 +531,94 @@ html, body
 
         100%
             left: 10%
+
+@media all and (max-width: 375px)
+    .main-block__title
+        font-size: 37px
+        line-height: 36px
+        top: 100px
+        min-width: 340px
+
+    .main-block__container
+        width: 356px
+        height: 88px
+
+    .container__info
+        font-size: 16px
+        line-height: 21px
+
+    .main-block__details
+        display: none
+
+    .cookies
+        h3
+            min-width: 225px
+
+    .cookies__hide
+        padding-left: 15px
+
+    .start-quiz
+        display: block
+        opacity: 1
+        width: 346px
+        height: 160px
+        h3
+            font-size: 15px
+            line-height: 15px
+            width: 241px
+            left: 50%
+            transform: translate(-50%, 0%)
+        img
+            width: 346px
+            height: 160px
+        button
+            width: 203px
+            height: 47px
+            font-size: 16px
+            line-height: 20px
+            left: 50%
+            transform: translate(-50%, 0%)
+            img
+                width: 6px
+                height: 12px
+
+    .quiz 
+        width: 336px
+        height: 435px
+
+    .quiz-q5
+        width: 336px
+        height: 515px
+
+    .q1-answers
+        width: 284px
+        height: 250px
+
+    .q5-answers
+        width: 272px
+        height: 275px
+
+    .q5-answer
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        height: 80px
+        span
+            top: 0
+            left: 0
+            transform: none
+            font-size: 18px
+            line-height: 22px
+            width: auto
+        input
+            bottom: 0
+            top: auto
+            left: 0
+            width: 272px
+            height: 54px
+            font-size: 18px
+        select
+            right: auto
+            top: auto
+            left: 0
+            bottom: 0
