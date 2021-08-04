@@ -863,15 +863,21 @@ html, body {
     padding-right: 30px;
     bottom: 60px;
   }
+  .q6-card__right {
+    -webkit-animation: none;
+            animation: none;
+  }
   .q6-card__right img {
     width: 100%;
   }
   .q6-card__bottom {
-    height: 170px;
+    height: 21.5%;
     left: 0%;
+    -webkit-animation: none;
+            animation: none;
   }
   .q6-card__bottom img {
-    width: 100%;
+    width: 90%;
     margin-bottom: 0px;
     margin-left: 0px;
   }
