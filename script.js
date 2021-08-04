@@ -40,15 +40,28 @@ function showEl(e) {
     e.style.opacity = '1'
 }
 
-detailsBtn.addEventListener('click', () => {
-    leftDetailsBtn()
-    setTimeout(upBlock, 100, '20%')
-    setTimeout(hideEl, 200, detailsBtn)
-    setTimeout(removeEl, 800, detailsBtn)
-    setTimeout(reduceTitle, 100)
-    displayEl(quizBlock)
-    setTimeout(showEl, 400, quizBlock)
-})
+let windowWidth = window.innerWidth
+
+if(windowWidth >= 1200) {
+    detailsBtn.addEventListener('click', () => {
+        leftDetailsBtn()
+        setTimeout(upBlock, 100, '20%')
+        setTimeout(hideEl, 200, detailsBtn)
+        setTimeout(removeEl, 800, detailsBtn)
+        setTimeout(reduceTitle, 100)
+        displayEl(quizBlock)
+        setTimeout(showEl, 400, quizBlock)
+    })
+} else if(windowWidth < 1200) {
+    detailsBtn.addEventListener('click', () => {
+        leftDetailsBtn()
+        setTimeout(upBlock, 100, '200px')
+        setTimeout(hideEl, 200, detailsBtn)
+        setTimeout(removeEl, 800, detailsBtn)
+        displayEl(quizBlock)
+        setTimeout(showEl, 400, quizBlock)
+    })
+}
 
 let quizBtn = document.querySelector('.start-quiz-btn')
 let quizBlock = document.querySelector('.start-quiz')

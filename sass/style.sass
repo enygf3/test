@@ -20,6 +20,8 @@ html, body
 
 .main-block
     background: url(../img/main-circle.png) no-repeat center, linear-gradient(180deg, #EC222A 0%, #D12A31 100%)
+    object-fit: cover
+    background-size: auto
 
 .main-block__title
     text-transform: uppercase
@@ -117,9 +119,10 @@ html, body
     text-decoration: underline
     position: absolute
     top: 50%
-    left: 60%
+    left: 100%
     transform: translate(0%, -50%)
     cursor: pointer
+    padding-left: 25px
 
 .start-quiz
     background-color: #fff
@@ -433,7 +436,7 @@ html, body
     border: none
     position: absolute
     left: 50%
-    bottom: 20px
+    bottom: 30px
     transform: translate(-50%, 0%)
     cursor: pointer
     transition-duration: .5s
@@ -482,3 +485,47 @@ html, body
 
     100%
          left: 15%
+
+@media all and (min-width: 768px) and(max-width: 1199px)  
+    .main-block__title
+        font-size: 60px
+        line-height: 58px
+        top: 40px
+
+    .main-block__container
+        width: 542px
+        height: 134px
+
+    .container__info
+        font-size: 30px
+        line-height: 28px
+
+    .main-block__details
+        h3
+            font-size: 34px
+        img
+            width: 38px
+            height: 20px
+
+    .q6-card__right
+        img
+            width: 75%
+
+    .q6-card__bottom
+        height: 151.19px
+        left: 10%
+        img
+            width: 70%
+            margin-bottom: 0px
+            margin-left: 0px
+
+    @keyframes card-bottom
+        0%
+            left: 0
+            opacity: 0
+
+        25%
+            left: 15%
+
+        100%
+            left: 10%
