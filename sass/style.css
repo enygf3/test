@@ -724,6 +724,7 @@ html, body {
   .main-block__container {
     width: 356px;
     height: 88px;
+    top: 35%;
   }
   .container__info {
     font-size: 16px;
